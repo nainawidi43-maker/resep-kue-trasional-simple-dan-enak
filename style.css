@@ -1,0 +1,39 @@
+/* styles.css */
+:root{
+--bg:#fff7f0;
+--card:#ffffff;
+--accent:#7bbf6a;
+--text:#333;
+--muted:#666;
+--shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:var(--text); background:linear-gradient(180deg,var(--bg), #fff);}
+.container{max-width:980px; margin:0 auto; padding:1rem}
+.site-header{background:var(--accent); color:white; padding:2rem 0 1.4rem; box-shadow:var(--shadow)}
+.site-header h1{margin:0; font-size:clamp(1.4rem,2.6vw,2rem)}
+.tagline{opacity:.95; margin-top:.35rem}
+.search-bar{padding:1rem 0}
+.search-bar input{width:100%; padding:.75rem 1rem; border-radius:10px; border:1px solid rgba(0,0,0,.08); font-size:1rem}
+.recipes-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1.25rem; margin-bottom:2rem}
+.card{background:var(--card); border-radius:12px; overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column}
+.card-img{width:100%; height:160px; object-fit:cover; display:block}
+.card-title{margin:1rem; margin-bottom:0.25rem; font-size:1.1rem}
+.card-desc{margin:0 1rem 1rem; color:var(--muted); font-size:.95rem}
+details{padding:0 1rem 1rem}
+details summary{cursor:pointer; margin-bottom:.5rem; font-weight:600}
+.site-footer{border-top:1px solid rgba(0,0,0,.05); padding:1rem 0; text-align:center; color:var(--muted)}
+
+
+/* Responsive tweaks */
+@media (max-width:600px){
+.card-img{height:140px}
+.site-header{padding:1.4rem 0}
+}
+
+
+/* Utility */
+ol,ul{padding-left:1.15rem}
+
+
+/* End styles */
