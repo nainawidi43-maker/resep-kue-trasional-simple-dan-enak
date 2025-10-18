@@ -1,72 +1,98 @@
+<!DOCTYPE html>
 <html lang="id">
-<li>200 g tepung terigu protein sedang</li>
-<li>1 sdt kayu manis bubuk, 1/2 sdt pala bubuk</li>
-</ul>
-<h3>Langkah</h3>
-<ol>
-<li>Kocok mentega dan gula sampai putih dan fluffy.</li>
-<li>Tambahkan kuning telur sedikit demi sedikit sambil dikocok.</li>
-<li>Masukkan tepung dan rempah. Ratakan adonan.</li>
-<li>Tuang sedikit adonan ke loyang, panggang sampai kecokelatan tiap lapis (gunakan broiler/grill untuk lapisan).</li>
-<li>Ulangi hingga adonan habis. Dinginkan sebelum diiris.</li>
-</ol>
-</details>
-</article>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resep Kue Tradisional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Resep Kue Tradisional Indonesia</h1>
+    <p>Kumpulan resep kue lezat dari nusantara</p>
+  </header>
 
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        
+        <h3>Klepon</h3>
+        <p class="meta">Waktu: 30 menit | Porsi: 20 buah</p>
+        <h4>Bahan:</h4>
+        <ul>
+          <li>200 g tepung ketan</li>
+          <li>150 ml air pandan</li>
+          <li>Gula jawa serut secukupnya</li>
+          <li>Kelapa parut kukus untuk taburan</li>
+        </ul>
+        <h4>Cara Membuat:</h4>
+        <ol>
+          <li>Campur tepung ketan dan air pandan hingga kalis.</li>
+          <li>Bentuk bulat dan isi dengan gula jawa.</li>
+          <li>Rebus hingga mengapung, lalu gulingkan ke kelapa parut.</li>
+        </ol>
+      </div>
 
-<!-- Card 3 -->
-<article class="card" data-title="Kue Pandan Cekelat">
-<img src="https://via.placeholder.com/600x360?text=Kue+Pandan" alt="Kue Pandan" class="card-img">
-<h2 class="card-title">Kue Pandan</h2>
-<p class="card-desc">Kue lembut beraroma pandan, cocok untuk sajian keluarga.</p>
-<details>
-<summary>Detail Resep</summary>
-<h3>Bahan</h3>
-<ul>
-<li>200 g tepung terigu</li>
-<li>150 g gula pasir</li>
-<li>3 butir telur</li>
-<li>150 ml santan atau susu</li>
-<li>2 sdm pasta pandan atau air perasan daun pandan</li>
-</ul>
-<h3>Langkah</h3>
-<ol>
-<li>Kocok telur dan gula sampai mengembang dan warna pucat.</li>
-<li>Masukkan tepung sedikit demi sedikit, aduk perlahan.</li>
-<li>Tambahkan santan dan pasta pandan, aduk hingga rata.</li>
-<li>Panggang pada suhu 170°C selama 25–30 menit atau sampai matang.</li>
-</ol>
-</details>
-</article>
+      <div class="card">
+        <h3>Kue Lapis Legit</h3>
+        <p class="meta">Waktu: 120 menit | Porsi: 1 loyang</p>
+        <h4>Bahan:</h4>
+        <ul>
+          <li>200 g tepung terigu</li>
+          <li>6 butir telur</li>
+          <li>200 g gula</li>
+          <li>200 g mentega cair</li>
+        </ul>
+        <h4>Cara Membuat:</h4>
+        <ol>
+          <li>Kocok telur dan gula hingga mengembang.</li>
+          <li>Masukkan tepung dan mentega cair, aduk rata.</li>
+          <li>Panggang selapis demi selapis hingga habis adonan.</li>
+        </ol>
+      </div>
 
+      <div class="card">
+        
+        <h3>Nastar</h3>
+        <p class="meta">Waktu: 90 menit | Porsi: 40 buah</p>
+        <h4>Bahan:</h4>
+        <ul>
+          <li>250 g tepung terigu</li>
+          <li>200 g mentega</li>
+          <li>2 kuning telur</li>
+          <li>Selai nanas secukupnya</li>
+        </ul>
+        <h4>Cara Membuat:</h4>
+        <ol>
+          <li>Campur mentega dan kuning telur, lalu masukkan tepung.</li>
+          <li>Bentuk bulat dan isi selai nanas.</li>
+          <li>Panggang hingga kecokelatan.</li>
+        </ol>
+      </div>
 
-</section>
-</main>
+      <div class="card">
+        
+        <h3>Onde-onde</h3>
+        <p class="meta">Waktu: 120 menit | Porsi: 25 buah</p>
+        <h4>Bahan:</h4>
+        <ul>
+          <li>200 g tepung ketan</li>
+          <li>100 ml air hangat</li>
+          <li>Isian kacang hijau manis</li>
+          <li>Wijen secukupnya</li>
+        </ul>
+        <h4>Cara Membuat:</h4>
+        <ol>
+          <li>Bentuk adonan ketan isi kacang hijau.</li>
+          <li>Gulingkan ke wijen dan goreng hingga matang.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
 
-
-<footer class="site-footer">
-<div class="container">
-<p>© <span id="year"></span> Resep Kue Tradisional — Dibuat dengan &hearts;</p>
-</div>
-</footer>
-
-
-<script>
-// Tampilkan tahun di footer
-document.getElementById('year').textContent = new Date().getFullYear();
-
-
-// Simple search filter
-const search = document.getElementById('search');
-const cards = Array.from(document.querySelectorAll('.card'));
-search.addEventListener('input', (e) => {
-const q = e.target.value.toLowerCase().trim();
-cards.forEach(card => {
-const title = card.dataset.title.toLowerCase();
-const text = card.textContent.toLowerCase();
-card.style.display = (title.includes(q) || text.includes(q)) ? '' : 'none';
-});
-});
-</script>
+  <footer>
+    <p>Naina dan diffa; 2025 Resep Kue Tradisional Indonesia</p>
+  </footer>
 </body>
+</html>
 </html>
