@@ -1,0 +1,72 @@
+<html lang="id">
+<li>200 g tepung terigu protein sedang</li>
+<li>1 sdt kayu manis bubuk, 1/2 sdt pala bubuk</li>
+</ul>
+<h3>Langkah</h3>
+<ol>
+<li>Kocok mentega dan gula sampai putih dan fluffy.</li>
+<li>Tambahkan kuning telur sedikit demi sedikit sambil dikocok.</li>
+<li>Masukkan tepung dan rempah. Ratakan adonan.</li>
+<li>Tuang sedikit adonan ke loyang, panggang sampai kecokelatan tiap lapis (gunakan broiler/grill untuk lapisan).</li>
+<li>Ulangi hingga adonan habis. Dinginkan sebelum diiris.</li>
+</ol>
+</details>
+</article>
+
+
+<!-- Card 3 -->
+<article class="card" data-title="Kue Pandan Cekelat">
+<img src="https://via.placeholder.com/600x360?text=Kue+Pandan" alt="Kue Pandan" class="card-img">
+<h2 class="card-title">Kue Pandan</h2>
+<p class="card-desc">Kue lembut beraroma pandan, cocok untuk sajian keluarga.</p>
+<details>
+<summary>Detail Resep</summary>
+<h3>Bahan</h3>
+<ul>
+<li>200 g tepung terigu</li>
+<li>150 g gula pasir</li>
+<li>3 butir telur</li>
+<li>150 ml santan atau susu</li>
+<li>2 sdm pasta pandan atau air perasan daun pandan</li>
+</ul>
+<h3>Langkah</h3>
+<ol>
+<li>Kocok telur dan gula sampai mengembang dan warna pucat.</li>
+<li>Masukkan tepung sedikit demi sedikit, aduk perlahan.</li>
+<li>Tambahkan santan dan pasta pandan, aduk hingga rata.</li>
+<li>Panggang pada suhu 170°C selama 25–30 menit atau sampai matang.</li>
+</ol>
+</details>
+</article>
+
+
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year"></span> Resep Kue Tradisional — Dibuat dengan &hearts;</p>
+</div>
+</footer>
+
+
+<script>
+// Tampilkan tahun di footer
+document.getElementById('year').textContent = new Date().getFullYear();
+
+
+// Simple search filter
+const search = document.getElementById('search');
+const cards = Array.from(document.querySelectorAll('.card'));
+search.addEventListener('input', (e) => {
+const q = e.target.value.toLowerCase().trim();
+cards.forEach(card => {
+const title = card.dataset.title.toLowerCase();
+const text = card.textContent.toLowerCase();
+card.style.display = (title.includes(q) || text.includes(q)) ? '' : 'none';
+});
+});
+</script>
+</body>
+</html>
